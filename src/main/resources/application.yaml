@@ -1,0 +1,48 @@
+spring:
+  application:
+    name: "API Fynno"
+    # dados de conexão com banco de dados.
+    # neste caso é um banco em memória que
+    # que esta definido neste momento para
+    # realização de teste de aprendizado.
+  datasource:
+    url: "jdbc:h2:mem:fynno"
+    username: "sa"
+    password: "root"
+    # neste caso aqui em jpa informamos qual
+    # o tipo de banco de dados que será trabalhado
+    # nesta aplicação. a nível de aprendizado, vamos
+    # utlizar o h2 indicando o caminho da sua lib.
+  jpa:
+    database-platform: "org.hibernate.dialect.H2Dialect"
+    # configuração de exibição do h2 via web browser
+  h2:
+    console:
+      # habilita o recurso se true.
+      enabled: true
+      # caminho para acessar o banco de dados em memoria
+      # via web browser.
+      path: "/h2-console"
+# configuração de log
+logging:
+  # definição do arquivo de log e onde vai gravar
+  file:
+    name: "logs/fynno.log"
+  # customização do log
+  # configurações de comportamento do log
+  logback:
+    rollingpolicy:
+      # nome do log para evitar acumular tudo em apenas um arquivo
+      # esta configuração permite juntar os logs de um dia e compactá-los
+      # no formato .gz.
+      file-name-pattern: "logs/archived/fynno-%d{yyyy-MM-dd}.%i.log.gz"
+      # tamanho que um arquivo de log pode chegar
+      max-file-size: 10MB
+      # quantidade de dias que os logs serão preservados
+      max-history: 30
+      # limite total de espaço dos arquivos históricos;
+      # remove os mais antigos quando necessário
+      total-size-cap: 500MB
+      # ao iniciar, limpa os históricos que excederem
+      # a retenção de 30 dias ou o limite de espaço
+      clean-history-on-start: true
