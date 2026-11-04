@@ -11,15 +11,13 @@ public record OkResponse(
     // e aplica o null onde deveria atribuir o
     // valor.
     // -------------------------------------------------
-    // essa classe tem o parâmetro data que não
-    // é obrigatório ter, portanto implementamos
-    // desta maneira:
+    // Recebe apenas a mensagem e chama o construtor
+    // de três parâmetros, usando success=true e data=null.
     public OkResponse(String message) {
         this(message, true, null);
     }
-    // método construtor que chama ele mesmo atribuindo
-    // naturalmente o valor de true, sem a necessidade
-    // de informar no nível do controller.
+    // Recebe mensagem e dados e chama o construtor
+    // de três parâmetros, usando success=true.
     public OkResponse(String message, Object data) {
         this(message, true, data);
     }

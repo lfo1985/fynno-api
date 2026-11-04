@@ -11,6 +11,7 @@ import br.api.fynno.response.shared.OkResponse;
 import br.api.fynno.response.user.UserDetailResponse;
 import br.api.fynno.response.user.UserSummaryResponse;
 import jakarta.validation.Valid;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -68,8 +69,11 @@ public class UserController {
 
     @GetMapping("search")
     public List<UserSummaryResponse> search(
+            // definição do nome do parâmetro e quando não houver dado
+            // recebe em branco por padrão.
             @RequestParam(name = "name", defaultValue = "") String name,
             @RequestParam(name = "email", defaultValue = "") String email,
+            // permite o campo não ser informado, configurado como opcional
             @RequestParam(name = "active", required = false) boolean active
     ) {
         // um fator curioso do spring boot:
@@ -110,9 +114,10 @@ public class UserController {
         // caso o mesmo não seja encontrado, ele retorna uma exceção
         // de resposta de requisição onde seta para o erro 404 e emite
         // a mensagem de "user not found".
-        User user = this.userRepository.findById(id).orElseThrow(
-                () -> new UserNotFoundException("User not found.")
-        );
+        User user = this
+                .userRepository
+                .findById(id)
+                .orElseThrow(() -> new UserNotFoundException("User not found."));
         // Retorna o objeto response definindo precisamente
         // apenas alguns dados para exibição.
         return this.userMapper.toUserDetailResponse(user);
@@ -138,7 +143,9 @@ public class UserController {
 
         this.userRepository.save(user);
 
-        return ResponseEntity.ok(
+        return ResponseEntity
+                .status(HttpStatus.CREATED)
+                .body(
                 new OkResponse(
                         "User created!",
                         this.userMapper.toUserDetailResponse(user)

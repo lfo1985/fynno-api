@@ -1,9 +1,7 @@
 package br.api.fynno.repository;
 
 import br.api.fynno.model.entity.User;
-import br.api.fynno.response.user.UserSummaryResponse;
 import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.List;
 
 // Interface do repositório de ações de persistência
