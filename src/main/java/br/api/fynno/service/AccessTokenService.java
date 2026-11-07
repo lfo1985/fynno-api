@@ -1,7 +1,11 @@
 package br.api.fynno.service;
 
+import org.springframework.beans.factory.annotation.Value;
+
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
 import java.nio.charset.StandardCharsets;
-import java.security.MessageDigest;
+import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 import java.util.Base64;
@@ -10,6 +14,18 @@ import java.util.HexFormat;
 public class AccessTokenService {
 
     private static final SecureRandom  RANDOM = new SecureRandom();
+    private final SecretKeySpec secret;
+    private static final String HMAC_ALGORITHM = "HmacSHA256";
+
+    public AccessTokenService(@Value("${fynno.auth.token-secret}") String secretToken) {
+        byte[] key = Base64.getDecoder().decode(secretToken);
+        if (key.length < 32) {
+            throw new IllegalArgumentException(
+                    "FYNNO_TOKEN_SECRET deve conter pelo menos 32 bytes em Base64"
+            );
+        }
+        secret = new SecretKeySpec(key, HMAC_ALGORITHM);
+    }
 
     public String generateToken () {
         // declara um array de 32 posições do tipo byte
@@ -32,17 +48,23 @@ public class AccessTokenService {
     public String sha256Encode (String token) {
         try {
             // captura os bytes do token gerado com UTF-8
-            // e calcula o sha-256 destes bytes.
-            byte[] hash = MessageDigest
-                    .getInstance("SHA-256")
-                    .digest(token.getBytes(StandardCharsets.UTF_8));
-            // como o retorno da linha acima é um array, convertemos
+            // e calcula o hmac sha-256 destes bytes.
+            Mac mac = Mac.getInstance(HMAC_ALGORITHM);
+            mac.init(secret);
+            // Como o retorno da linha acima é um array, convertemos
             // os bytes em formato hexadecimal para poder gravar
             // na tabela do banco de dados.
+            // O hash gerado acima foi criado a partir de uma secret,
+            // ou seja, se algum usuário tentar burlar o token de alguma
+            // maneira, existe uma chave secreta que impede esta criação.
+            byte[] hash = mac
+                    .doFinal(token.getBytes(StandardCharsets.UTF_8));
+            // converte em string e formata em hexadecimal para gravar
+            // no banco.
             return HexFormat
                     .of()
                     .formatHex(hash);
-        } catch (NoSuchAlgorithmException e) {
+        } catch (NoSuchAlgorithmException | InvalidKeyException e) {
             throw new RuntimeException(e);
         }
     }

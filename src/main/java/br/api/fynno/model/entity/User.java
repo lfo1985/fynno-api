@@ -116,16 +116,7 @@ public class User {
         this.updated_at = LocalDateTime.now();
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", password_hash='" + password_hash + '\'' +
-                ", active=" + active +
-                ", created_at='" + created_at + '\'' +
-                ", updated_at='" + updated_at + '\'' +
-                '}';
+    public String getPasswordHash() {
+        return this.password_hash;
     }
 }

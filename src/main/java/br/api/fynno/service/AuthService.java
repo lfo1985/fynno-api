@@ -1,0 +1,70 @@
+package br.api.fynno.service;
+
+import br.api.fynno.exception.AuthException;
+import br.api.fynno.helper.HashPassword;
+import br.api.fynno.model.entity.AccessToken;
+import br.api.fynno.model.entity.User;
+import br.api.fynno.repository.AccessTokenRepository;
+import br.api.fynno.repository.UserRepository;
+import br.api.fynno.response.auth.loginData;
+import org.springframework.beans.factory.annotation.Value;
+import java.time.LocalDateTime;
+
+public class AuthService {
+    private final UserRepository userRepository;
+    private final AccessTokenRepository accessTokenRepository;
+    private final Integer minutes;
+
+    public AuthService(
+            UserRepository userRepository,
+            AccessTokenRepository accessTokenRepository,
+            @Value("${fynno.auth.token-expires-time}") Integer minutes
+    ) {
+        this.userRepository = userRepository;
+        this.accessTokenRepository = accessTokenRepository;
+        this.minutes = minutes;
+    }
+
+    public loginData doLogin (String email, String password, String tokenHash) {
+        try {
+            User user = checkUser(email, password);
+            this.registryToken(user, tokenHash);
+            return new loginData(
+                    user.getId(),
+                    user.getName(),
+                    user.getEmail()
+            );
+        } catch (AuthException e) {
+            throw new RuntimeException(e.getMessage());
+        }
+    }
+
+    private User checkUser (String email, String password) {
+        if(email == null || password == null) {
+            throw new AuthException("Invalid e-mail or password");
+        }
+
+        User user = getUserByEmail(email);
+        boolean verifyPassword = HashPassword.check(password, user.getPasswordHash());
+
+        if(!user.getEmail().equals(email) || !verifyPassword) {
+            throw new AuthException("E-mail or password incorrect.");
+        }
+
+        return user;
+    }
+
+    private void registryToken(User user, String tokenHash) {
+        AccessToken accessToken = new AccessToken();
+        accessToken.setUserId(user.getId());
+        accessToken.setTokenHash(tokenHash);
+        LocalDateTime expiresTime = LocalDateTime.now().plusMinutes(this.minutes);
+        accessToken.setExpiresAt(expiresTime);
+
+        this.accessTokenRepository.save(accessToken);
+    }
+
+    private User getUserByEmail(String email) {
+        return this.userRepository.findByEmail(email);
+    }
+}

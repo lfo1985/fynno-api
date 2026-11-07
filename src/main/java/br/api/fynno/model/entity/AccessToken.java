@@ -13,13 +13,9 @@ public class AccessToken {
     @Column(name = "id", unique = true)
     Integer id;
 
-    @Getter
-    @Setter
     @Column(name = "user_id")
     Integer user_id;
 
-    @Getter
-    @Setter
     @Column(name="token_hash")
     String token_hash;
 
@@ -40,5 +36,29 @@ public class AccessToken {
     @PrePersist
     public void beforeInsert() {
         this.created_at = LocalDateTime.now();
+    }
+
+    public String getTokenHash() {
+        return token_hash;
+    }
+
+    public void setTokenHash(String token_hash) {
+        this.token_hash = token_hash;
+    }
+
+    public Integer getUserId() {
+        return user_id;
+    }
+
+    public void setUserId(Integer user_id) {
+        this.user_id = user_id;
+    }
+
+    public LocalDateTime getExpiresAt() {
+        return expires_at;
+    }
+
+    public void setExpiresAt(LocalDateTime expires_at) {
+        this.expires_at = expires_at;
     }
 }

@@ -30,4 +30,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
             String email,
             boolean active
     );
+
+    User findByEmail(String email);
 }

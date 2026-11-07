@@ -46,3 +46,7 @@ logging:
       # ao iniciar, limpa os históricos que excederem
       # a retenção de 30 dias ou o limite de espaço
       clean-history-on-start: true
+fynno:
+  auth:
+    token-secret: "4RyrRMrRAkCC5BsXW84OOg5xDNBqrkL+sqqXqTo8IKw="
+    token-expires-time: 60
