@@ -1,6 +1,8 @@
 package br.api.fynno.service;
 
+import br.api.fynno.contracts.IAccesssTokenService;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
@@ -11,7 +13,8 @@ import java.security.SecureRandom;
 import java.util.Base64;
 import java.util.HexFormat;
 
-public class AccessTokenService {
+@Service
+public class AccessTokenService implements IAccesssTokenService {
 
     private static final SecureRandom  RANDOM = new SecureRandom();
     private final SecretKeySpec secret;

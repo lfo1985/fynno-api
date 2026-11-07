@@ -1,21 +1,109 @@
-2026-11-03T07:51:31.917-03:00  INFO 24200 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Starting FynnoApplication using Java 25.0.5.0.3 with PID 24200 (D:\fynno\api\target\classes started by lfo19 in D:\fynno\api)
-2026-11-03T07:51:31.932-03:00  INFO 24200 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-11-03T07:51:32.147-03:00  INFO 24200 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-11-03T07:51:32.148-03:00  INFO 24200 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-11-03T07:51:34.459-03:00  INFO 24200 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-11-03T07:51:34.870-03:00  INFO 24200 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 374 ms. Found 1 JPA repository interface.
-2026-11-03T07:51:37.480-03:00  INFO 24200 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-11-03T07:51:37.548-03:00  INFO 24200 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-11-03T07:51:37.550-03:00  INFO 24200 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
-2026-11-03T07:51:37.756-03:00  INFO 24200 --- [API Fynno] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 5605 ms
-2026-11-03T07:51:38.077-03:00  INFO 24200 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-11-03T07:51:38.740-03:00  INFO 24200 --- [API Fynno] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:fynno user=SA
-2026-11-03T07:51:38.744-03:00  INFO 24200 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-11-03T07:51:39.132-03:00  INFO 24200 --- [API Fynno] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-11-03T07:51:39.315-03:00  INFO 24200 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
-2026-11-03T07:51:41.338-03:00  INFO 24200 --- [API Fynno] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-11-03T07:51:41.496-03:00  WARN 24200 --- [API Fynno] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-11-03T07:51:41.545-03:00  INFO 24200 --- [API Fynno] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-11-07T20:31:19.897-03:00  INFO 25780 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Starting FynnoApplication using Java 25.0.5.0.3 with PID 25780 (D:\fynno\api\target\classes started by lfo19 in D:\fynno\api)
+2026-11-07T20:31:19.929-03:00  INFO 25780 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-11-07T20:31:20.702-03:00  INFO 25780 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-07T20:31:20.705-03:00  INFO 25780 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-07T20:31:25.576-03:00  INFO 25780 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-07T20:31:26.461-03:00  INFO 25780 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 733 ms. Found 2 JPA repository interfaces.
+2026-11-07T20:31:30.929-03:00  INFO 25780 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-07T20:31:31.034-03:00  INFO 25780 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-07T20:31:31.039-03:00  INFO 25780 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-07T20:31:31.436-03:00  INFO 25780 --- [API Fynno] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 10729 ms
+2026-11-07T20:31:32.434-03:00  INFO 25780 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-07T20:31:33.570-03:00  INFO 25780 --- [API Fynno] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:fynno user=SA
+2026-11-07T20:31:33.580-03:00  INFO 25780 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-07T20:31:33.770-03:00  WARN 25780 --- [API Fynno] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Failed to execute SQL script statement #2 of file [D:\fynno\api\target\classes\schema.sql]: create table access_token ( id INTEGER GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, user_id INTEGER NOT NULL, token_hash VARCHAR(36), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, expires_at TIMESTAMP, revoked_at TIMESTAMP, ADD CONSTRAINT fk_access_tokens_user FOREIGN KEY (user_id) REFERENCES users(id) )
+2026-11-07T20:31:33.799-03:00  WARN 25780 --- [API Fynno] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-11-07T20:31:33.801-03:00  INFO 25780 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-07T20:31:33.821-03:00  INFO 25780 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-07T20:31:33.837-03:00  INFO 25780 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-07T20:31:33.901-03:00  INFO 25780 --- [API Fynno] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-07T20:31:34.012-03:00 ERROR 25780 --- [API Fynno] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/hibernate/autoconfigure/HibernateJpaConfiguration.class]: Failed to initialize dependency 'dataSourceScriptDatabaseInitializer' of LoadTimeWeaverAware bean 'entityManagerFactory': Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Failed to execute SQL script statement #2 of file [D:\fynno\api\target\classes\schema.sql]: create table access_token ( id INTEGER GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, user_id INTEGER NOT NULL, token_hash VARCHAR(36), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, expires_at TIMESTAMP, revoked_at TIMESTAMP, ADD CONSTRAINT fk_access_tokens_user FOREIGN KEY (user_id) REFERENCES users(id) )
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:977) ~[spring-context-7.0.10.jar:7.0.10]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:621) ~[spring-context-7.0.10.jar:7.0.10]
+	at org.springframework.boot.web.server.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:131) ~[spring-boot-web-server-4.1.2.jar:4.1.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-4.1.2.jar:4.1.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:433) ~[spring-boot-4.1.2.jar:4.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:309) ~[spring-boot-4.1.2.jar:4.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1353) ~[spring-boot-4.1.2.jar:4.1.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1342) ~[spring-boot-4.1.2.jar:4.1.2]
+	at br.api.fynno.FynnoApplication.main(FynnoApplication.java:11) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:40) ~[spring-boot-devtools-4.1.2.jar:4.1.2]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/jdbc/autoconfigure/DataSourceInitializationAutoConfiguration.class]: Failed to execute SQL script statement #2 of file [D:\fynno\api\target\classes\schema.sql]: create table access_token ( id INTEGER GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, user_id INTEGER NOT NULL, token_hash VARCHAR(36), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, expires_at TIMESTAMP, revoked_at TIMESTAMP, ADD CONSTRAINT fk_access_tokens_user FOREIGN KEY (user_id) REFERENCES users(id) )
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1815) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:309) ~[spring-beans-7.0.10.jar:7.0.10]
+	... 13 common frames omitted
+Caused by: org.springframework.jdbc.datasource.init.ScriptStatementFailedException: Failed to execute SQL script statement #2 of file [D:\fynno\api\target\classes\schema.sql]: create table access_token ( id INTEGER GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, user_id INTEGER NOT NULL, token_hash VARCHAR(36), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, expires_at TIMESTAMP, revoked_at TIMESTAMP, ADD CONSTRAINT fk_access_tokens_user FOREIGN KEY (user_id) REFERENCES users(id) )
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:293) ~[spring-jdbc-7.0.10.jar:7.0.10]
+	at org.springframework.jdbc.datasource.init.ResourceDatabasePopulator.populate(ResourceDatabasePopulator.java:254) ~[spring-jdbc-7.0.10.jar:7.0.10]
+	at org.springframework.jdbc.datasource.init.DatabasePopulatorUtils.execute(DatabasePopulatorUtils.java:54) ~[spring-jdbc-7.0.10.jar:7.0.10]
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.runScripts(DataSourceScriptDatabaseInitializer.java:75) ~[spring-boot-jdbc-4.1.2.jar:4.1.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.runScripts(AbstractScriptDatabaseInitializer.java:147) ~[spring-boot-sql-4.1.2.jar:4.1.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:108) ~[spring-boot-sql-4.1.2.jar:4.1.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:97) ~[spring-boot-sql-4.1.2.jar:4.1.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:75) ~[spring-boot-sql-4.1.2.jar:4.1.2]
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65) ~[spring-boot-sql-4.1.2.jar:4.1.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1862) ~[spring-beans-7.0.10.jar:7.0.10]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1811) ~[spring-beans-7.0.10.jar:7.0.10]
+	... 20 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Unknown data type: "CONSTRAINT"; SQL statement:
+create table access_token ( id INTEGER GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY, user_id INTEGER NOT NULL, token_hash VARCHAR(36), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, expires_at TIMESTAMP, revoked_at TIMESTAMP, ADD CONSTRAINT fk_access_tokens_user FOREIGN KEY (user_id) REFERENCES users(id) ) [50004-240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:223) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.message.DbException.get(DbException.java:199) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.readIfDataType1(Parser.java:5908) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.readIfDataType(Parser.java:5739) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:5721) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5600) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8983) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8926) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.parseCreate(Parser.java:6483) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.parsePrepared(Parser.java:648) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.parse(Parser.java:584) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.parse(Parser.java:559) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.command.Parser.prepareCommand(Parser.java:487) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:647) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:563) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1160) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:245) ~[h2-2.4.240.jar:2.4.240]
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231) ~[h2-2.4.240.jar:2.4.240]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:95) ~[HikariCP-7.0.2.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-7.0.2.jar:na]
+	at org.springframework.jdbc.datasource.init.ScriptUtils.executeSqlScript(ScriptUtils.java:261) ~[spring-jdbc-7.0.10.jar:7.0.10]
+	... 30 common frames omitted
+
+2026-11-07T20:35:49.056-03:00  INFO 4500 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Starting FynnoApplication using Java 25.0.5.0.3 with PID 4500 (D:\fynno\api\target\classes started by lfo19 in D:\fynno\api)
+2026-11-07T20:35:49.065-03:00  INFO 4500 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-11-07T20:35:49.230-03:00  INFO 4500 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-07T20:35:49.231-03:00  INFO 4500 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-07T20:35:51.919-03:00  INFO 4500 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-07T20:35:52.150-03:00  INFO 4500 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 2 JPA repository interfaces.
+2026-11-07T20:35:55.863-03:00  INFO 4500 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-07T20:35:55.923-03:00  INFO 4500 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-07T20:35:55.924-03:00  INFO 4500 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-07T20:35:56.148-03:00  INFO 4500 --- [API Fynno] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6915 ms
+2026-11-07T20:35:56.460-03:00  INFO 4500 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-07T20:35:57.149-03:00  INFO 4500 --- [API Fynno] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:fynno user=SA
+2026-11-07T20:35:57.156-03:00  INFO 4500 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-07T20:35:57.633-03:00  INFO 4500 --- [API Fynno] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-07T20:35:57.853-03:00  INFO 4500 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-07T20:35:59.624-03:00  INFO 4500 --- [API Fynno] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-07T20:35:59.812-03:00  WARN 4500 --- [API Fynno] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-07T20:35:59.871-03:00  INFO 4500 --- [API Fynno] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:h2:mem:fynno]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
@@ -27,40 +115,50 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-11-03T07:51:44.018-03:00  INFO 24200 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-11-03T07:51:44.117-03:00  INFO 24200 --- [API Fynno] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-11-03T07:51:44.406-03:00  INFO 24200 --- [API Fynno] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-11-03T07:51:45.005-03:00  WARN 24200 --- [API Fynno] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-11-03T07:51:45.861-03:00  INFO 24200 --- [API Fynno] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fynno'
-2026-11-03T07:51:45.994-03:00  INFO 24200 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-11-03T07:51:46.008-03:00  INFO 24200 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Started FynnoApplication in 15.536 seconds (process running for 17.983)
-2026-11-03T07:52:04.715-03:00  INFO 24200 --- [API Fynno] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-11-03T07:52:04.716-03:00  INFO 24200 --- [API Fynno] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-11-03T07:52:04.723-03:00  INFO 24200 --- [API Fynno] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2026-11-03T07:56:46.929-03:00  INFO 24200 --- [API Fynno] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-11-03T07:56:46.960-03:00  INFO 24200 --- [API Fynno] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-11-03T07:56:46.969-03:00  INFO 24200 --- [API Fynno] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-11-03T07:56:46.982-03:00  WARN 24200 --- [API Fynno] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
-2026-11-03T07:56:46.983-03:00  INFO 24200 --- [API Fynno] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-11-03T07:56:46.988-03:00  INFO 24200 --- [API Fynno] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-11-03T08:18:33.302-03:00  INFO 9564 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Starting FynnoApplication using Java 25.0.5.0.3 with PID 9564 (D:\fynno\api\target\classes started by lfo19 in D:\fynno\api)
-2026-11-03T08:18:33.317-03:00  INFO 9564 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-11-03T08:18:33.565-03:00  INFO 9564 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-11-03T08:18:33.566-03:00  INFO 9564 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-11-03T08:18:35.808-03:00  INFO 9564 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-11-03T08:18:35.988-03:00  INFO 9564 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 148 ms. Found 1 JPA repository interface.
-2026-11-03T08:18:37.575-03:00  INFO 9564 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-11-03T08:18:37.614-03:00  INFO 9564 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-11-03T08:18:37.618-03:00  INFO 9564 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
-2026-11-03T08:18:37.759-03:00  INFO 9564 --- [API Fynno] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4191 ms
-2026-11-03T08:18:38.003-03:00  INFO 9564 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-11-03T08:18:38.499-03:00  INFO 9564 --- [API Fynno] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:fynno user=SA
-2026-11-03T08:18:38.504-03:00  INFO 9564 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-11-03T08:18:38.847-03:00  INFO 9564 --- [API Fynno] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-11-03T08:18:39.049-03:00  INFO 9564 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
-2026-11-03T08:18:40.279-03:00  INFO 9564 --- [API Fynno] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-11-03T08:18:40.401-03:00  WARN 9564 --- [API Fynno] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-11-03T08:18:40.445-03:00  INFO 9564 --- [API Fynno] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2026-11-07T20:36:03.617-03:00  INFO 4500 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-07T20:36:03.807-03:00  INFO 4500 --- [API Fynno] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-07T20:36:03.999-03:00  WARN 4500 --- [API Fynno] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\fynno\api\target\classes\br\api\fynno\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'br.api.fynno.service.AuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-11-07T20:36:04.008-03:00  INFO 4500 --- [API Fynno] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-07T20:36:04.068-03:00  WARN 4500 --- [API Fynno] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-11-07T20:36:04.073-03:00  INFO 4500 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-07T20:36:04.082-03:00  INFO 4500 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-07T20:36:04.100-03:00  INFO 4500 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-07T20:36:04.164-03:00  INFO 4500 --- [API Fynno] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-07T20:36:04.291-03:00 ERROR 4500 --- [API Fynno] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in br.api.fynno.controller.AuthController required a bean of type 'br.api.fynno.service.AuthService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'br.api.fynno.service.AuthService' in your configuration.
+
+2026-11-07T20:45:00.244-03:00  INFO 21012 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Starting FynnoApplication using Java 25.0.5.0.3 with PID 21012 (D:\fynno\api\target\classes started by lfo19 in D:\fynno\api)
+2026-11-07T20:45:00.258-03:00  INFO 21012 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-11-07T20:45:00.595-03:00  INFO 21012 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-11-07T20:45:00.599-03:00  INFO 21012 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-11-07T20:45:05.959-03:00  INFO 21012 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-11-07T20:45:06.399-03:00  INFO 21012 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 340 ms. Found 2 JPA repository interfaces.
+2026-11-07T20:45:09.049-03:00  INFO 21012 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-11-07T20:45:09.103-03:00  INFO 21012 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-11-07T20:45:09.105-03:00  INFO 21012 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
+2026-11-07T20:45:09.373-03:00  INFO 21012 --- [API Fynno] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 8761 ms
+2026-11-07T20:45:09.933-03:00  INFO 21012 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-11-07T20:45:10.806-03:00  INFO 21012 --- [API Fynno] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:fynno user=SA
+2026-11-07T20:45:10.815-03:00  INFO 21012 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-11-07T20:45:11.491-03:00  INFO 21012 --- [API Fynno] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-11-07T20:45:11.727-03:00  INFO 21012 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
+2026-11-07T20:45:13.244-03:00  INFO 21012 --- [API Fynno] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-11-07T20:45:13.400-03:00  WARN 21012 --- [API Fynno] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-11-07T20:45:13.465-03:00  INFO 21012 --- [API Fynno] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [jdbc:h2:mem:fynno]
 	Database driver: H2 JDBC Driver
 	Database dialect: H2Dialect
@@ -72,64 +170,29 @@
 	Pool: DataSourceConnectionProvider
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2026-11-03T08:18:43.252-03:00  INFO 9564 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-11-03T08:18:43.368-03:00  INFO 9564 --- [API Fynno] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-11-03T08:18:43.664-03:00  INFO 9564 --- [API Fynno] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-11-03T08:18:44.364-03:00  WARN 9564 --- [API Fynno] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-11-03T08:18:45.200-03:00  INFO 9564 --- [API Fynno] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fynno'
-2026-11-03T08:18:45.351-03:00  INFO 9564 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-11-03T08:18:45.366-03:00  INFO 9564 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Started FynnoApplication in 14.898 seconds (process running for 16.784)
-2026-11-03T08:20:21.179-03:00  INFO 9564 --- [API Fynno] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-11-03T08:20:21.181-03:00  INFO 9564 --- [API Fynno] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-11-03T08:20:21.184-03:00  INFO 9564 --- [API Fynno] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2026-11-03T08:24:12.303-03:00  INFO 9564 --- [API Fynno] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-11-03T08:24:12.327-03:00  INFO 9564 --- [API Fynno] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-11-03T08:24:12.335-03:00  INFO 9564 --- [API Fynno] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-11-03T08:24:12.346-03:00  WARN 9564 --- [API Fynno] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
-2026-11-03T08:24:12.347-03:00  INFO 9564 --- [API Fynno] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-11-03T08:24:12.349-03:00  INFO 9564 --- [API Fynno] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2026-11-03T08:24:25.894-03:00  INFO 11208 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Starting FynnoApplication using Java 25.0.5.0.3 with PID 11208 (D:\fynno\api\target\classes started by lfo19 in D:\fynno\api)
-2026-11-03T08:24:25.903-03:00  INFO 11208 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : No active profile set, falling back to 1 default profile: "default"
-2026-11-03T08:24:26.127-03:00  INFO 11208 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-11-03T08:24:26.128-03:00  INFO 11208 --- [API Fynno] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-11-03T08:24:29.938-03:00  INFO 11208 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2026-11-03T08:24:30.169-03:00  INFO 11208 --- [API Fynno] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 196 ms. Found 1 JPA repository interface.
-2026-11-03T08:24:32.373-03:00  INFO 11208 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-11-03T08:24:32.489-03:00  INFO 11208 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-11-03T08:24:32.490-03:00  INFO 11208 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.27]
-2026-11-03T08:24:32.695-03:00  INFO 11208 --- [API Fynno] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 6566 ms
-2026-11-03T08:24:33.008-03:00  INFO 11208 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2026-11-03T08:24:33.754-03:00  INFO 11208 --- [API Fynno] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:fynno user=SA
-2026-11-03T08:24:33.760-03:00  INFO 11208 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2026-11-03T08:24:34.121-03:00  INFO 11208 --- [API Fynno] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
-2026-11-03T08:24:34.461-03:00  INFO 11208 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.13.Final
-2026-11-03T08:24:36.179-03:00  INFO 11208 --- [API Fynno] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2026-11-03T08:24:36.335-03:00  WARN 11208 --- [API Fynno] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2026-11-03T08:24:36.383-03:00  INFO 11208 --- [API Fynno] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [jdbc:h2:mem:fynno]
-	Database driver: H2 JDBC Driver
-	Database dialect: H2Dialect
-	Database version: 2.4.240
-	Default catalog/schema: FYNNO/PUBLIC
-	Autocommit mode: undefined/unknown
-	Isolation level: READ_COMMITTED [default READ_COMMITTED]
-	JDBC fetch size: 100
-	Pool: DataSourceConnectionProvider
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2026-11-03T08:24:39.308-03:00  INFO 11208 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2026-11-03T08:24:39.421-03:00  INFO 11208 --- [API Fynno] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2026-11-03T08:24:39.730-03:00  INFO 11208 --- [API Fynno] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
-2026-11-03T08:24:40.585-03:00  WARN 11208 --- [API Fynno] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2026-11-03T08:24:41.886-03:00  INFO 11208 --- [API Fynno] [restartedMain] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:fynno'
-2026-11-03T08:24:42.022-03:00  INFO 11208 --- [API Fynno] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-11-03T08:24:42.037-03:00  INFO 11208 --- [API Fynno] [restartedMain] br.api.fynno.FynnoApplication            : Started FynnoApplication in 17.658 seconds (process running for 20.339)
-2026-11-03T08:25:02.223-03:00  INFO 11208 --- [API Fynno] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-11-03T08:25:02.224-03:00  INFO 11208 --- [API Fynno] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-11-03T08:25:02.227-03:00  INFO 11208 --- [API Fynno] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2026-11-03T19:53:34.939-03:00  INFO 11208 --- [API Fynno] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-11-03T19:53:34.998-03:00  INFO 11208 --- [API Fynno] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-11-03T19:53:35.025-03:00  INFO 11208 --- [API Fynno] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-11-03T19:53:35.091-03:00  WARN 11208 --- [API Fynno] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
-2026-11-03T19:53:35.093-03:00  INFO 11208 --- [API Fynno] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-11-03T19:53:35.099-03:00  INFO 11208 --- [API Fynno] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-07T20:45:17.257-03:00  INFO 21012 --- [API Fynno] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-11-07T20:45:17.371-03:00  INFO 21012 --- [API Fynno] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-11-07T20:45:17.467-03:00  WARN 21012 --- [API Fynno] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'authController' defined in file [D:\fynno\api\target\classes\br\api\fynno\controller\AuthController.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'br.api.fynno.contracts.IAuthService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-11-07T20:45:17.469-03:00  INFO 21012 --- [API Fynno] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-11-07T20:45:17.504-03:00  WARN 21012 --- [API Fynno] [restartedMain] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-240]
+2026-11-07T20:45:17.505-03:00  INFO 21012 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-11-07T20:45:17.511-03:00  INFO 21012 --- [API Fynno] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-11-07T20:45:17.525-03:00  INFO 21012 --- [API Fynno] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-11-07T20:45:17.568-03:00  INFO 21012 --- [API Fynno] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-11-07T20:45:17.638-03:00 ERROR 21012 --- [API Fynno] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in br.api.fynno.controller.AuthController required a bean of type 'br.api.fynno.contracts.IAuthService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'br.api.fynno.contracts.IAuthService' in your configuration.
+

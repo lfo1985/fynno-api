@@ -1,16 +1,20 @@
 package br.api.fynno.service;
 
+import br.api.fynno.contracts.IAuthService;
 import br.api.fynno.exception.AuthException;
 import br.api.fynno.helper.HashPassword;
 import br.api.fynno.model.entity.AccessToken;
 import br.api.fynno.model.entity.User;
 import br.api.fynno.repository.AccessTokenRepository;
 import br.api.fynno.repository.UserRepository;
-import br.api.fynno.response.auth.loginData;
+import br.api.fynno.response.auth.UserLoginDataResponse;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
 import java.time.LocalDateTime;
 
-public class AuthService {
+@Service
+public class AuthService implements IAuthService {
     private final UserRepository userRepository;
     private final AccessTokenRepository accessTokenRepository;
     private final Integer minutes;
@@ -25,11 +29,11 @@ public class AuthService {
         this.minutes = minutes;
     }
 
-    public loginData doLogin (String email, String password, String tokenHash) {
+    public UserLoginDataResponse doLogin (String email, String password, String tokenHash) {
         try {
             User user = checkUser(email, password);
             this.registryToken(user, tokenHash);
-            return new loginData(
+            return new UserLoginDataResponse(
                     user.getId(),
                     user.getName(),
                     user.getEmail()
