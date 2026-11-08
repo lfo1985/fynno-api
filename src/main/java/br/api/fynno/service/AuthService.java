@@ -43,6 +43,32 @@ public class AuthService implements IAuthService {
         }
     }
 
+    public void RevokedToken(String tokenHash) {
+        AccessToken accessToken = this
+                .accessTokenRepository
+                .findByTokenHash(tokenHash);
+
+        // Validar se o token existe.
+        if(accessToken == null) {
+            throw new AuthException("User not logged.");
+        }
+
+        // se o token já foi revogado, emite exceção.
+        if(accessToken.getRevokedAt() != null) {
+            throw new AuthException("Token is already revoked.");
+        }
+
+        // Esta validação consiste em certificar se o now() (data de hoje)
+        // é menor que a data de expiração. o usAfter significa "é depois",
+        // ou seja, é depois dessa data?
+        if(LocalDateTime.now().isAfter(accessToken.getExpiresAt())) {
+            throw new AuthException("Token is expired.");
+        }
+
+        accessToken.setRevokedAt(LocalDateTime.now());
+        this.accessTokenRepository.save(accessToken);
+    }
+
     private User checkUser (String email, String password) {
         if(email == null || password == null) {
             throw new AuthException("Invalid e-mail or password");

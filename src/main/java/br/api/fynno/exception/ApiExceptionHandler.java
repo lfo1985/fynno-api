@@ -46,6 +46,15 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
         );
     }
 
+    // exceção que é disparada quando não encontra usuários.
+    @ExceptionHandler(AuthException.class)
+    public ProblemDetail handleAuthException(AuthException exception) {
+        return ProblemDetail.forStatusAndDetail(
+                HttpStatus.UNAUTHORIZED,
+                exception.getMessage()
+        );
+    }
+
     // exceção das validações que vem nas requests e são
     // configuradas via anotação nas dtos.
     @Override

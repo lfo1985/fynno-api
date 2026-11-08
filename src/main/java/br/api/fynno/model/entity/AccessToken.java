@@ -16,8 +16,9 @@ public class AccessToken {
     @Column(name = "user_id")
     Integer user_id;
 
+    @Setter
     @Column(name="token_hash")
-    String token_hash;
+    String tokenHash;
 
     @Getter
     @Column(name = "created_at")
@@ -38,14 +39,6 @@ public class AccessToken {
         this.created_at = LocalDateTime.now();
     }
 
-    public String getTokenHash() {
-        return token_hash;
-    }
-
-    public void setTokenHash(String token_hash) {
-        this.token_hash = token_hash;
-    }
-
     public Integer getUserId() {
         return user_id;
     }
@@ -61,4 +54,10 @@ public class AccessToken {
     public void setExpiresAt(LocalDateTime expires_at) {
         this.expires_at = expires_at;
     }
+
+    public LocalDateTime getRevokedAt() {
+        return revoked_at;
+    }
+
+    public void setRevokedAt(LocalDateTime revoked_at) { this.revoked_at = revoked_at; }
 }
