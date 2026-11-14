@@ -11,40 +11,35 @@ public class AccessToken {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true)
-    Integer id;
-
-    @Column(name = "user_id")
-    Integer user_id;
+    private Integer id;
 
     @Setter
     @Column(name="token_hash")
-    String tokenHash;
+    private String tokenHash;
 
     @Getter
     @Column(name = "created_at")
-    LocalDateTime created_at;
+    private LocalDateTime created_at;
 
     @Getter
     @Setter
     @Column(name = "expires_at")
-    LocalDateTime expires_at;
+    private LocalDateTime expires_at;
 
     @Getter
     @Setter
     @Column(name = "revoked_at")
-    LocalDateTime revoked_at;
+    private LocalDateTime revoked_at;
+
+    @Getter
+    @Setter
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "user_id", nullable = false)
+    private User user;
 
     @PrePersist
     public void beforeInsert() {
         this.created_at = LocalDateTime.now();
-    }
-
-    public Integer getUserId() {
-        return user_id;
-    }
-
-    public void setUserId(Integer user_id) {
-        this.user_id = user_id;
     }
 
     public LocalDateTime getExpiresAt() {

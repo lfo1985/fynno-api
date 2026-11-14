@@ -1,6 +1,7 @@
 package br.api.fynno.mapper;
 
 import br.api.fynno.model.entity.User;
+import br.api.fynno.response.auth.CheckUserLoginResponse;
 import br.api.fynno.response.user.UserDetailResponse;
 import br.api.fynno.response.user.UserSummaryResponse;
 import org.springframework.stereotype.Component;
@@ -27,6 +28,14 @@ public class UserMapper {
                 user.getName(),
                 user.getEmail(),
                 user.getActive()
+        );
+    }
+
+    public CheckUserLoginResponse toChekUserLoginResponse(User user) {
+        return new CheckUserLoginResponse(
+                user.getId(),
+                user.getName(),
+                user.getEmail()
         );
     }
 
